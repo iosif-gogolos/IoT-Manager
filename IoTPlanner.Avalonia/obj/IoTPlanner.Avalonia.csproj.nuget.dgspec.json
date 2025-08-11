@@ -51,27 +51,23 @@
           "dependencies": {
             "Avalonia": {
               "target": "Package",
-              "version": "[11.3.2, )"
+              "version": "[11.2.0, )"
             },
             "Avalonia.Desktop": {
               "target": "Package",
-              "version": "[11.3.2, )"
+              "version": "[11.2.0, )"
             },
             "Avalonia.Diagnostics": {
               "target": "Package",
-              "version": "[11.3.2, )"
+              "version": "[11.2.0, )"
             },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
-              "version": "[11.3.2, )"
+              "version": "[11.2.0, )"
             },
             "Avalonia.Themes.Fluent": {
               "target": "Package",
-              "version": "[11.3.2, )"
-            },
-            "MQTTnet": {
-              "target": "Package",
-              "version": "[5.0.1.1416, )"
+              "version": "[11.2.0, )"
             }
           },
           "imports": [
@@ -134,12 +130,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "MQTTnet": {
-              "target": "Package",
-              "version": "[5.0.1.1416, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
