@@ -1,37 +1,37 @@
 # IoTPlanner
 
-**IoTPlanner** ist eine plattformübergreifende Anwendung für **Hausbau- und IoT-Planung**,  
-erstellt mit **.NET**, **Avalonia** (Desktop) und **.NET MAUI** (Mobile), inklusive **MQTT**-Integration für die Echtzeit-Kommunikation mit IoT-Geräten.
+**IoTPlanner** is a cross-platform application for **home construction and IoT device planning**,  
+built with **.NET**, **Avalonia** (Desktop), and **.NET MAUI** (Mobile), including **MQTT** integration for real-time communication with IoT devices.
 
 ---
 
 ## ✨ Features
 
-- **Plattformübergreifend**
+- **Cross-platform**
   - Windows `.exe`
   - macOS `.dmg`
   - Android `.apk`
-  - iOS (via macOS Build)
-- **MQTT Kommunikation** (via [MQTTnet](https://github.com/dotnet/MQTTnet))
-  - Verbindung zu MQTT-Broker
-  - Nachrichten empfangen & senden
-- **IoT Geräteplanung**
-  - Geräte platzieren
-  - Kabel & Receiver planen
-- **Zukunft: Augmented Reality**
-  - Geräte im Raum virtuell platzieren
-  - Layout speichern in proprietärem Format
+  - iOS (via macOS build)
+- **MQTT Communication** (via [MQTTnet](https://github.com/dotnet/MQTTnet))
+  - Connect to MQTT broker
+  - Receive and send messages
+- **IoT Device Planning**
+  - Place devices in a floor plan
+  - Plan cables and receivers
+- **Future: Augmented Reality**
+  - Virtually place devices in the room
+  - Save layout in a proprietary format
 
 ---
 
-## 📂 Projektstruktur
+## 📂 Project Structure
 
 ```
 IoTPlanner/
- ├── IoTPlanner.sln                # Solution File
+ ├── IoTPlanner.sln                # Solution file
  ├── IoTPlanner.Avalonia/           # Avalonia Desktop App
  ├── IoTPlanner.Mobile/             # .NET MAUI Mobile App
- ├── IoTPlanner.Shared/             # Gemeinsame Logik (ViewModels, Models, Services)
+ ├── IoTPlanner.Shared/             # Shared logic (ViewModels, Models, Services)
  │    └── ViewModels/
  │         └── IotViewModel.cs      # MQTT ViewModel
  └── README.md
@@ -39,14 +39,14 @@ IoTPlanner/
 
 ---
 
-## 🚀 Installation & Entwicklung
+## 🚀 Installation & Development
 
-### 1. Voraussetzungen
+### 1. Requirements
 
 - [.NET 7+ SDK](https://dotnet.microsoft.com/download)
-- [VS Code](https://code.visualstudio.com/) oder Visual Studio 2022
-- Optional: Android SDK / Xcode für mobile Builds
-- Avalonia und MAUI Templates installieren:
+- [VS Code](https://code.visualstudio.com/) or Visual Studio 2022
+- Optional: Android SDK / Xcode for mobile builds
+- Install Avalonia and MAUI templates:
 
 ```bash
 dotnet new install Avalonia.Templates
@@ -56,7 +56,7 @@ dotnet workload install maui-android maui-ios
 
 ---
 
-### 2. MQTTnet Paket installieren
+### 2. Install MQTTnet package
 
 ```bash
 dotnet add IoTPlanner.Shared package MQTTnet
@@ -66,7 +66,7 @@ dotnet add IoTPlanner.Mobile package MQTTnet
 
 ---
 
-### 3. Desktop starten
+### 3. Run Desktop App
 
 **Windows**:
 ```bash
@@ -82,7 +82,7 @@ dotnet run
 
 ---
 
-### 4. Mobile starten
+### 4. Run Mobile App
 
 **Android**:
 ```bash
@@ -90,7 +90,7 @@ cd IoTPlanner.Mobile
 dotnet build -t:Run -f net7.0-android -p:Platform=Android
 ```
 
-**iOS** (nur unter macOS mit Xcode):
+**iOS** (macOS with Xcode required):
 ```bash
 cd IoTPlanner.Mobile
 dotnet build -t:Run -f net7.0-ios
@@ -118,16 +118,16 @@ dotnet publish IoTPlanner.Mobile -c Release -f net7.0-android -p:Platform=Androi
 
 ---
 
-## 🛠 Architektur
+## 🛠 Architecture
 
 - **MVVM Pattern**
-- **Shared Logic**: `IoTPlanner.Shared` enthält ViewModels, Models und Services
+- **Shared Logic**: `IoTPlanner.Shared` contains ViewModels, Models, and Services
 - **Avalonia**: Desktop UI (Windows, macOS, Linux)
 - **MAUI**: Mobile UI (Android, iOS)
 
 ---
 
-## 📡 MQTT Beispiel (IotViewModel.cs)
+## 📡 MQTT Example (IotViewModel.cs)
 
 ```csharp
 public async Task ConnectAsync(string brokerHost, int port = 8883)
@@ -144,6 +144,6 @@ public async Task ConnectAsync(string brokerHost, int port = 8883)
 
 ---
 
-## 📜 Lizenz
+## 📜 License
 
-MIT License © 2025 Dein Name
+MIT License © 2025 
