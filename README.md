@@ -145,5 +145,4 @@ public async Task ConnectAsync(string brokerHost, int port = 8883)
 ---
 
 ## 📜 License
-
-MIT License © 2025 
+© 2025 
