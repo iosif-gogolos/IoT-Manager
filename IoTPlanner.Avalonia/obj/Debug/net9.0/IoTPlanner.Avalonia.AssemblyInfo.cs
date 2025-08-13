@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IoTPlanner.Avalonia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6991cafcda76e979228e7ae4709a0705e6a693a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29e33a91d1007d76d92f58f6517c9f7e04dba792")]
 [assembly: System.Reflection.AssemblyProductAttribute("IoTPlanner.Avalonia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IoTPlanner.Avalonia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
