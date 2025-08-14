@@ -5,8 +5,8 @@
 /Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/IoTPlanner.Shared.AssemblyInfoInputs.cache
 /Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/IoTPlanner.Shared.AssemblyInfo.cs
 /Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/IoTPlanner.Shared.csproj.CoreCompileInputs.cache
+/Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/IoTPlanner.Shared.sourcelink.json
 /Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/IoTPlanner.Shared.dll
 /Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/refint/IoTPlanner.Shared.dll
 /Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/IoTPlanner.Shared.pdb
 /Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/ref/IoTPlanner.Shared.dll
-/Users/iosifgogolos/IoTPlanner/IoTPlanner.Shared/obj/Debug/net9.0/IoTPlanner.Shared.csproj.AssemblyReference.cache
