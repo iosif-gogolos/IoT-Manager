@@ -1,6 +1,6 @@
-# IoTPlanner
+# IoT-Manager
 
-**IoTPlanner** is a cross-platform application for **home construction and IoT device planning**,  
+**IoT-Manager** is a cross-platform application for **home construction and IoT device planning**,  
 built with **.NET**, **Avalonia** (Desktop), and **.NET MAUI** (Mobile), including **MQTT** integration for real-time communication with IoT devices.
 
 ---
@@ -27,11 +27,11 @@ built with **.NET**, **Avalonia** (Desktop), and **.NET MAUI** (Mobile), includi
 ## 📂 Project Structure
 
 ```
-IoTPlanner/
- ├── IoTPlanner.sln                # Solution file
- ├── IoTPlanner.Avalonia/           # Avalonia Desktop App
- ├── IoTPlanner.Mobile/             # .NET MAUI Mobile App
- ├── IoTPlanner.Shared/             # Shared logic (ViewModels, Models, Services)
+IoT-Manager/
+ ├── IoT-Manager.sln                # Solution file
+ ├── IoT-Manager.Avalonia/           # Avalonia Desktop App
+ ├── IoT-Manager.Mobile/             # .NET MAUI Mobile App
+ ├── IoT-Manager.Shared/             # Shared logic (ViewModels, Models, Services)
  │    └── ViewModels/
  │         └── IotViewModel.cs      # MQTT ViewModel
  └── README.md
@@ -59,9 +59,9 @@ dotnet workload install maui-android maui-ios
 ### 2. Install MQTTnet package
 
 ```bash
-dotnet add IoTPlanner.Shared package MQTTnet
-dotnet add IoTPlanner.Avalonia package MQTTnet
-dotnet add IoTPlanner.Mobile package MQTTnet
+dotnet add IoT-Manager.Shared package MQTTnet
+dotnet add IoT-Manager.Avalonia package MQTTnet
+dotnet add IoT-Manager.Mobile package MQTTnet
 ```
 
 ---
@@ -70,13 +70,13 @@ dotnet add IoTPlanner.Mobile package MQTTnet
 
 **Windows**:
 ```bash
-cd IoTPlanner.Avalonia
+cd IoT-Manager.Avalonia
 dotnet run
 ```
 
 **macOS**:
 ```bash
-cd IoTPlanner.Avalonia
+cd IoT-Manager.Avalonia
 dotnet run
 ```
 
@@ -86,13 +86,13 @@ dotnet run
 
 **Android**:
 ```bash
-cd IoTPlanner.Mobile
+cd IoT-Manager.Mobile
 dotnet build -t:Run -f net7.0-android -p:Platform=Android
 ```
 
 **iOS** (macOS with Xcode required):
 ```bash
-cd IoTPlanner.Mobile
+cd IoT-Manager.Mobile
 dotnet build -t:Run -f net7.0-ios
 ```
 
@@ -102,18 +102,18 @@ dotnet build -t:Run -f net7.0-ios
 
 ### Windows `.exe`
 ```bash
-dotnet publish IoTPlanner.Avalonia -c Release -r win-x64 --self-contained true -o publish/windows
+dotnet publish IoT-Manager.Avalonia -c Release -r win-x64 --self-contained true -o publish/windows
 ```
 
 ### macOS `.dmg`
 ```bash
-dotnet publish IoTPlanner.Avalonia -c Release -r osx-x64 --self-contained true -o publish/macos
-hdiutil create -volname IoTPlanner -srcfolder publish/macos -ov -format UDZO IoTPlanner.dmg
+dotnet publish IoT-Manager.Avalonia -c Release -r osx-x64 --self-contained true -o publish/macos
+hdiutil create -volname IoT-Manager -srcfolder publish/macos -ov -format UDZO IoT-Manager.dmg
 ```
 
 ### Android `.apk`
 ```bash
-dotnet publish IoTPlanner.Mobile -c Release -f net7.0-android -p:Platform=Android -o publish/android
+dotnet publish IoT-Manager.Mobile -c Release -f net7.0-android -p:Platform=Android -o publish/android
 ```
 
 ---
@@ -121,7 +121,7 @@ dotnet publish IoTPlanner.Mobile -c Release -f net7.0-android -p:Platform=Androi
 ## 🛠 Architecture
 
 - **MVVM Pattern**
-- **Shared Logic**: `IoTPlanner.Shared` contains ViewModels, Models, and Services
+- **Shared Logic**: `IoT-Manager.Shared` contains ViewModels, Models, and Services
 - **Avalonia**: Desktop UI (Windows, macOS, Linux)
 - **MAUI**: Mobile UI (Android, iOS)
 
